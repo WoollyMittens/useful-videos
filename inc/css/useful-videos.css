@@ -1,0 +1,49 @@
+/*
+	Reference Styling for Efficient embedded videos
+*/
+/* line 6, ../../src/scss/useful-videos.scss */
+.videos-list {
+  margin: 1.3em 0;
+  padding: 0;
+}
+/* line 9, ../../src/scss/useful-videos.scss */
+.videos-list .videos-preview {
+  background-color: #000;
+  display: inline-block;
+  list-style-type: none;
+  box-sizing: border-box;
+  width: 33%;
+  padding-bottom: calc(56.25% / 3);
+  position: relative;
+}
+/* line 17, ../../src/scss/useful-videos.scss */
+.videos-list .videos-preview iframe {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 24, ../../src/scss/useful-videos.scss */
+.videos-list .videos-preview a img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+/* line 29, ../../src/scss/useful-videos.scss */
+.videos-list .videos-preview a:after {
+  background-image: url(../img/play-button.svg);
+  background-size: 64px auto;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
