@@ -1,17 +1,18 @@
-@import "compass/css3";
-@import "compass/utilities";
+
+
 /*
 	Reference Styling for Efficient embedded videos
 */
 .videos-list {
   margin: 1.3em 0;
   padding: 0;
+  display: flex;
   .videos-preview {
     background-color: #000;
     display: inline-block;
     list-style-type: none;
     box-sizing: border-box;
-    width: 33%;
+    width: calc(100% / 3);
     padding-bottom: calc(56.25% / 3);
     position: relative;
     iframe {
