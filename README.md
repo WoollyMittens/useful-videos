@@ -2,7 +2,7 @@
 
 Embedded video that doesn't cause traffic until clicked.
 
-Try the <a href="http://www.woollymittens.nl/useful/default.php?url=useful-videos">demo</a>.
+Try the <a href="http://www.woollymittens.nl/default.php?url=useful-videos">demo</a>.
 
 ## How to include the script
 
