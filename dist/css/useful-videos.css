@@ -4,13 +4,14 @@
 .videos-list {
   margin: 1.3em 0;
   padding: 0;
-  display: -webkit-flex;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .videos-list .videos-preview {
     background-color: #000;
     display: inline-block;
     list-style-type: none;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: calc(100% / 3);
     padding-bottom: calc(56.25% / 3);
