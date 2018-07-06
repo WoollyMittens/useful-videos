@@ -1,38 +1,34 @@
 /*
 	Source:
-	van Creij, Maurice (2014). "useful.videos.js: Embedded video that doesn't cause traffic until clicked.", version 20141127, http://www.woollymittens.nl/.
+	van Creij, Maurice (2018). "videos.js: Embedded video that doesn't cause traffic until clicked.", http://www.woollymittens.nl/.
 
 	License:
 	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
 */
 
-// create the constructor if needed
-var useful = useful || {};
-useful.Videos = useful.Videos || function () {};
-
-// extend the prototype with the init function
-useful.Videos.prototype.init = function (config) {
-	// turn on strict mode
-	"use strict";
+// establish the class
+var Videos = function (config) {
 	// default config
 	this.config = {
 		'template' : '<iframe src="//www.youtube.com/embed/{id}?autoplay=1" height="400" width="300"></iframe>',
 		'separator' : 'v='
 	};
 	// store the config
-	for (var name in config) { this.config[name] = config[name]; }
+	for (var key in config) { this.config[key] = config[key]; }
 	// bind the components
-	this.previews = new this.Previews().init(this);
-	// return the object
-	return this;
+	this.previews = new this.Previews(this);
 };
 
-// extend the prototype with the scroll monitoring component
-useful.Videos.prototype.Previews = function () {
+// return as a require.js module
+if (typeof module !== 'undefined') {
+	exports = module.exports = Videos;
+}
+
+// extend the class
+Videos.prototype.Previews = function (context) {
 
 	// PROPERTIES
 
-	"use strict";
 	this.context = null;
 	this.config = {};
 
@@ -64,9 +60,6 @@ useful.Videos.prototype.Previews = function () {
 		element.parentNode.replaceChild(wrapper, element);
 	};
 
-};
+	this.init(context);
 
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Videos;
-}
+};

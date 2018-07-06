@@ -1,4 +1,4 @@
-# useful.videos.js: Efficient embedded video
+# videos.js: Efficient embedded video
 
 Embedded video that doesn't cause traffic until clicked.
 
@@ -9,21 +9,13 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-videos">demo
 The stylesheet is best included in the header of the document.
 
 ```html
-<link rel="stylesheet" href="./css/useful-videos.css"/>
+<link rel="stylesheet" href="./css/videos.css"/>
 ```
 
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/useful-videos.js"></script>
-```
-
-To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5.js*.
-
-```html
-<!--[if lte IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<script src="./js/videos.js"></script>
 ```
 
 ## How to start the script
@@ -39,7 +31,7 @@ To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5
 **href/src** - The URL's contain the video embed codes in the URLs.
 
 ```javascript
-var videos = new useful.Videos().init({
+var videos = new Videos({
 	'elements' : document.querySelectorAll('.videos-list a'),
 	'template' : '<iframe src="//www.youtube.com/embed/{id}?autoplay=1" height="400" width="300"></iframe>',
 	'separator' : /v=/gi

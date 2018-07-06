@@ -1,0 +1,54 @@
+/*
+	Reference Styling for Efficient embedded videos
+*/
+.videos-list {
+  margin: 1.3em 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .videos-list .videos-preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33%;
+    padding: 1%;
+    list-style-type: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .videos-list .videos-preview iframe {
+      border: none;
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    .videos-list .videos-preview a, .videos-list .videos-preview span {
+      background-color: #000;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      display: block;
+      width: 100%;
+      padding-bottom: 56.25%;
+      position: relative; }
+    .videos-list .videos-preview a img {
+      width: 100%;
+      height: auto;
+      position: absolute; }
+    .videos-list .videos-preview a:after {
+      background-image: url(../img/play-button.svg);
+      background-size: 64px auto;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      content: '';
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin-left: -32px;
+      margin-top: -32px;
+      cursor: pointer;
+      outline: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9tYWluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7O0VBRUU7QUFDRjtFQUNFLGdCQUFlO0VBQ2YsV0FBVTtFQUNWLHFCQUFhO0VBQWIscUJBQWE7RUFBYixjQUFhLEVBOENkO0VBakREO0lBS0kscUJBQWE7SUFBYixxQkFBYTtJQUFiLGNBQWE7SUFDYixXQUFVO0lBQ1YsWUFBVztJQUNYLHNCQUFxQjtJQUNyQiwrQkFBc0I7SUFBdEIsdUJBQXNCLEVBdUN2QjtJQWhESDtNQVdNLGFBQVk7TUFDWixtQkFBa0I7TUFDbEIsWUFBVztNQUNYLGFBQVksRUFDYjtJQWZMO01BaUJNLHVCQUFzQjtNQUN0QixvQkFBYztNQUFkLG1CQUFjO01BQWQsZUFBYztNQUNkLGVBQWM7TUFDZCxZQUFXO01BQ1gsdUJBQXNCO01BQ3RCLG1CQUFrQixFQUNuQjtJQXZCTDtNQTBCUSxZQUFXO01BQ1gsYUFBWTtNQUNaLG1CQUFrQixFQUNuQjtJQTdCUDtNQStCUSw4Q0FBNkM7TUFDN0MsMkJBQTBCO01BQzFCLDZCQUE0QjtNQUM1Qix5QkFBd0I7TUFDeEIsWUFBVztNQUNYLGVBQWM7TUFDZCxZQUFXO01BQ1gsYUFBWTtNQUNaLG1CQUFrQjtNQUNsQixrQkFBaUI7TUFDakIsZ0JBQWU7TUFDZixXQUFVO01BQ1YsbUJBQWtCO01BQ2xCLFVBQVM7TUFDVCxTQUFRLEVBQ1QiLCJmaWxlIjoidmlkZW9zLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuXG4vKlxuXHRSZWZlcmVuY2UgU3R5bGluZyBmb3IgRWZmaWNpZW50IGVtYmVkZGVkIHZpZGVvc1xuKi9cbi52aWRlb3MtbGlzdCB7XG4gIG1hcmdpbjogMS4zZW0gMDtcbiAgcGFkZGluZzogMDtcbiAgZGlzcGxheTogZmxleDtcbiAgLnZpZGVvcy1wcmV2aWV3IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHdpZHRoOiAzMyU7XG4gICAgcGFkZGluZzogMSU7XG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgaWZyYW1lIHtcbiAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgaGVpZ2h0OiAxMDAlO1xuICAgIH1cbiAgICBhLCBzcGFuIHtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDA7XG4gICAgICBmbGV4OiAwIDEgYXV0bztcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICBwYWRkaW5nLWJvdHRvbTogNTYuMjUlO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIH1cbiAgICBhIHtcbiAgICAgIGltZyB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIH1cbiAgICAgICY6YWZ0ZXIge1xuICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vaW1nL3BsYXktYnV0dG9uLnN2Zyk7XG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogNjRweCBhdXRvO1xuICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiA1MCU7XG4gICAgICAgIGNvbnRlbnQ6ICcnO1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgd2lkdGg6IDY0cHg7XG4gICAgICAgIGhlaWdodDogNjRweDtcbiAgICAgICAgbWFyZ2luLWxlZnQ6IC0zMnB4O1xuICAgICAgICBtYXJnaW4tdG9wOiAtMzJweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBvdXRsaW5lOiAwO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIGxlZnQ6IDUwJTtcbiAgICAgICAgdG9wOiA1MCU7XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */
