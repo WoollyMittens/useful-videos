@@ -20,5 +20,5 @@ var Videos = function (config) {
 };
 
 // return as a require.js module
-if (typeof define != 'undefined') define(['videos'], function () { return Videos });
+if (typeof define != 'undefined') define([], function () { return Videos });
 if (typeof module != 'undefined') module.exports = Videos;

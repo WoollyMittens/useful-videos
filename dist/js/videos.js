@@ -20,9 +20,8 @@ var Videos = function (config) {
 };
 
 // return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = Videos;
-}
+if (typeof define != 'undefined') define([], function () { return Videos });
+if (typeof module != 'undefined') module.exports = Videos;
 
 // extend the class
 Videos.prototype.Previews = function (context) {
