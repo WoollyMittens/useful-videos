@@ -2,8 +2,6 @@
 
 Embedded video that doesn't cause traffic until clicked.
 
-Try the <a href="http://www.woollymittens.nl/default.php?url=useful-videos">demo</a>.
-
 ## How to include the script
 
 The stylesheet is best included in the header of the document.
